@@ -10,7 +10,6 @@ class TasksController < ApplicationController
   # GET /tasks/1
   # GET /tasks/1.json
   def show
-    options_for_select
   end
 
   # GET /tasks/new

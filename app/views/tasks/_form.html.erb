@@ -22,12 +22,8 @@
   </div>
 
   <div class="field">
-    <%= form.label :project_id %>
-    <% if @project_options_for_select == nil %>
-      <span>Por favor crie um projeto</span>
-    <% else %>
-      <%=  collection_select(:task, :project_id, @project_options_for_select, :id, :description) %>
-    <% end %>
+    <%= form.label :project_id %>  
+    <%=  collection_select(:task, :project_id, @project_options_for_select, :id, :description) %>
 
   </div>
 
