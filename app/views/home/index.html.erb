@@ -1,35 +1,14 @@
-<div class="row">
-  <div class="col s12 m6">
-    <div class="row">
-     <div class="col s12 m6">
-       <div class="card teal accent-4">
-         <div class="card-content white-text">
-           <span class="card-title">Projeto</span>
-         </div>
-         <div class="card-action white-text">
-           <%= link_to "Ver todos os projetos" , projects_path, class: "white-text" %>
-         </div>
-       </div>
-     </div>
-   </div>
-  </div>
-  <% if @projects == nil%>
-    <h2>Parar criar um tarefa precisa primeiro criar um projeto</h2>
-  <% else %>
-  <div class="col s12 m6">
-    <div class="row">
-     <div class="col s12 m6">
-       <div class="card teal accent-4">
-         <div class="card-content white-text">
-           <span class="card-title">Tarefas</span>
-         </div>
-         <div class="card-action">
-           <%= link_to "Ver todos os tarefas" , tasks_path, class: "white-text" %>
-
-         </div>
-       </div>
-     </div>
-   </div>
-   <% end %>
-  </div>
+<div class="card">
+  <span class="card-title">Projeto</span>
+  <%= link_to "Ver todos os projetos" , projects_path, class: "link" %>
 </div>
+
+
+<% if @projects == nil%>
+<h2>Parar criar um tarefa precisa primeiro criar um projeto</h2>
+<% else %>
+<div class="card">
+  <span class="card-title">Tarefas</span>
+  <%= link_to "Ver todos os tarefas" , tasks_path, class: "white-text" %>
+</div>
+<% end %>
