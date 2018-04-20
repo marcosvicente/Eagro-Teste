@@ -18,10 +18,13 @@
 
   <div class="field">
     <%= form.label :description %>
-    <%= form.text_area :description %>
+    <%= form.text_area :description, class: "materialize-textarea"%>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit 'Enviar', class: "waves-effect waves-light btn teal accent-4"   %>
   </div>
+  <br>
+  <div class="divider"></div>
+  <br>
 <% end %>

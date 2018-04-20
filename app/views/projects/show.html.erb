@@ -1,14 +1,13 @@
 <p id="notice"><%= notice %></p>
+<div class="row">
+  <div class="col m6 offset-m3">
+    <h2><%= @project.name %><h2>
+    <p class="flow-text"><%= @project.description %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @project.name %>
-</p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @project.description %>
-</p>
 
-<%= link_to 'Edit', edit_project_path(@project) %> |
-<%= link_to 'Back', projects_path %>
+
+    <%= link_to 'Editar', edit_project_path(@project), class: "waves-effect waves-light btn teal accent-4"%>
+    <%= link_to 'Voltar', projects_path, class: "waves-effect waves-light btn teal accent-4" %>
+  </div>
+</div>
